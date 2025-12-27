@@ -93,10 +93,18 @@ ul {
   padding: 16px 20px;
   border-radius: 32px;
   cursor: pointer;
-  border-radius: 32px;
-
-  
+ 
 }
+.button-main:hover {
+  background-color: var(--color-primary-light);
+  border-color: #007BFF;
+  button-main:hover
+    color: var(--color-primary-blue);
+}
+ 
+  
+  
+
 /* link */ 
 nav {
   display: flex;
