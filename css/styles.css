@@ -59,7 +59,7 @@
   --color-primary-dark: #011C44;
   --color-secondary-dark: #4A4A4A;
   --color-secondary-light: #747272;
-  
+
 }
 
 /* base */
@@ -70,19 +70,25 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-  }
-  
-  h1,h2,h3,h4,h5,h6{
-    font-family:'Play', sans-serif ;
-  }
-  .button {
+}
 
- font-family: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Play', sans-serif;
+}
 
- cursor: pointer;
+.button {
+
+  font-family: inherit;
+
+  cursor: pointer;
 
 }
-  
+
 
 
 address {
@@ -90,24 +96,56 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-.section{
+
+.section {
   padding: 48px 0;
 }
-.container{
+
+.container {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
-  
+
 }
 
 
 
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 54px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-icon:last-child {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  gap: 16px;
+  align-items: center;
 
 
-/* link */ 
+}
+
+/* link */
 
 /* nav {
   display: flex;
@@ -137,7 +175,7 @@ ul {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500px;
-  
+
 }
 
 .link:hover {
@@ -154,7 +192,7 @@ nav ul:last-child img {
   height: 32px;
   cursor: pointer;
   opacity: 0.8;
-  
+
 }
 
 nav ul:last-child img:hover {
@@ -171,39 +209,40 @@ nav ul:last-child img:hover {
 
 
 
-.hero-text{
+.hero-text {
   font-family: Play, sans-serif;
   color: var(--color-primary-blue);
   font-size: 140px;
   line-height: 1.2;
   font-weight: 700px;
 }
-  
-.text{
-  
+
+.text {
+
   font-family: Roboto, sans-serif;
   color: var(--color-primary-dark);
   font-size: 18px;
-  
+
   line-height: 1.2;
-  
+
   text-align: left;
 }
-  
-.call-hero{
- font-family:'Roboto', serif;
- font-size: 12px;
- color: var(--color-secondary-dark); 
+
+.call-hero {
+  font-family: 'Roboto', serif;
+  font-size: 12px;
+  color: var(--color-secondary-dark);
 }
+
 .form-text {
   font-size: 12px;
   line-height: 1.6;
   color: var(--color-secondary-light);
   margin: 0 auto;
   font-weight: 400px;
-  
+
 }
-  
+
 
 /* button */
 .button-main {
@@ -215,40 +254,55 @@ nav ul:last-child img:hover {
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
- 
+
 }
+
 .button-main:hover {
   background-color: var(--color-primary-light);
   color: var(--color-primary-blue);
   border: 1px solid var(--color-primary-blue);
 }
-.button-main:hover{
+
+.button-main:hover {
   color: var(--color-primary-blue);
 }
-/* <!-- why-us-section --> */
 
-.about-call{
- color: var(--color-primary-dark);
- margin-bottom: 40px;
- font-size: 64px;
- font-family: play, sans-serif; 
- font-weight: 700px;
+/* <!-- why-us-section --> */
+.about-call-content {
+  display: flex;
+  align-items: center;
 }
-.about-text{
+
+.about-call-container img {
+  display: flex;
+  align-items: center;
+}
+
+.about-call {
+  color: var(--color-primary-dark);
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: play, sans-serif;
+  font-weight: 700px;
+}
+
+.about-text {
   font-family: Roboto, sans-serif;
   color: var(--color-secondary-dark);
   margin-bottom: 40px;
   font-size: 22px;
   line-height: 1.5;
-  
+
 }
-.color-blue{
+
+.color-blue {
   font-size: 64px;
- font-family: play, sans-serif; 
- font-weight: 700;
- color: var(--color-primary-blue);
+  font-family: play, sans-serif;
+  font-weight: 700;
+  color: var(--color-primary-blue);
 }
-.accent-about{
+
+.accent-about {
   color: var(--color-primary-dark);
   font-weight: 700px;
 }
@@ -256,15 +310,16 @@ nav ul:last-child img:hover {
 
 /* button form */
 /* form action */
-.accent-about-blue{
+.accent-about-blue {
   color: var(--color-primary-blue);
   font-weight: 700px;
 }
-.form-text-form{
+
+.form-text-form {
   margin-top: 32px;
 }
 
-.button-main{
+.button-main {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
@@ -274,61 +329,69 @@ nav ul:last-child img:hover {
   border-radius: 32px;
   cursor: pointer;
 }
+
 .button-form:hover {
   background-color: var(--color-primary-light);
   color: var(--color-primary-blue);
   border: 1px solid var(--color-primary-blue);
 }
-.button-form:hover{
+
+.button-form:hover {
   color: var(--color-primary-blue);
 }
-.accent{
+
+.accent {
   font-family: Roboto, sans-serif;
   color: #4A4A4A;
   font-size: 12px;
-  
+
   line-height: 1.5;
-  
+
 }
 
 
 
-.hero-servis{
-  
+.hero-servis {
+
   font-family: Play, sans-serif;
   color: var(--color-primary-dark);
-  font-size: 64px;font-weight: 700px;
+  font-size: 64px;
+  font-weight: 700px;
   line-height: 1.5;
 }
-.hero-call{
+
+.hero-call {
   color: var(--color-primary-dark);
   font-weight: 700;
 }
-.servis-content{
+
+.servis-content {
   padding-top: 40px;
   font-family: Roboto, sans-serif;
 }
 
-.hero-title .accent{
+.hero-title .accent {
   color: var(--color-secondary-light);
   font-size: 12px;
   font-weight: 400px;
   line-height: 1.5;
 }
-.section-why-us-section{
+
+.section-why-us-section {
   padding-top: 222px;
 }
 
 
 
-.address-link{
+.address-link {
   color: var(--color-primary-light);
   text-decoration: none;
   width: 400px;
   font-size: 16px;
   line-height: 1.5;
 }
-.address-copyrigh{
+
+.address-copyrigh {
   color: var(--color-secondary-light);
   font-size: 13px;
   font-weight: 400px;
@@ -337,21 +400,18 @@ nav ul:last-child img:hover {
 
 /* footer */
 
-.link-footer{
- color: var(--color-primary-light);
+.link-footer {
+  color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400px;
-  
+
 }
-.address-link{
+
+.address-link {
   color: var(--color-primary-light);
   text-decoration: none;
   width: 400px;
   font-size: 16px;
   line-height: 1.5;
 }
- 
-
-
-
