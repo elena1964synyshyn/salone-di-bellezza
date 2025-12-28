@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -57,19 +57,31 @@
   --color-primary-light: #FFFFFF;
   --color-primary-blue: #007BFF;
   --color-primary-dark: #011C44;
-  --color-secondary-dark: #4A4A4A00;
+  --color-secondary-dark: #4A4A4A;
   --color-secondary-light: #747272;
   
 }
 
 /* base */
 body {
-  font-family: 'Roboto', 'Play', sans-serif;
+
+  font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
   font-size: 18px;
   line-height: 1.5;
-  
+  margin: 0;
   }
+  
+  h1,h2,h3,h4,h5,h6{
+    font-family:'Play', sans-serif ;
+  }
+  .button {
+
+ font-family: inherit;
+
+ cursor: pointer;
+
+}
   
 
 
@@ -80,7 +92,15 @@ address {
 ul {
   list-style: none;
 }
-
+.section{
+  padding: 48px 0;
+}
+.container{
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  
+}
 
 
 
@@ -88,21 +108,59 @@ ul {
 
 
 /* link */ 
-nav 
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 40px;
+} */
 
 
 
-.link{
-  text-decoration: none;
+
+/* nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+
+
+
+.link {
   color: var(--color-primary-dark);
-  font-size: 18px;
-}
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
   
+}
+
 .link:hover {
   color: var(--color-primary-blue);
-  font-size: 700px;
 }
 
+
+
+
+
+/* Іконки соцмереж */
+nav ul:last-child img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  opacity: 0.8;
+  
+}
+
+nav ul:last-child img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 
 
 
@@ -128,7 +186,7 @@ nav
   font-size: 18px;
   
   line-height: 1.2;
-  font-weight: 400;
+  
   text-align: left;
 }
   
@@ -137,6 +195,15 @@ nav
  font-size: 12px;
  color: var(--color-secondary-dark); 
 }
+.form-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-secondary-light);
+  margin: 0 auto;
+  font-weight: 400;
+  
+}
+  
 
 /* button */
 .button-main {
@@ -158,12 +225,22 @@ nav
 .button-main:hover{
   color: var(--color-primary-blue);
 }
+/* <!-- why-us-section --> */
 
 .about-call{
  color: var(--color-primary-dark);
+ margin-bottom: 40px;
  font-size: 64px;
  font-family: play, sans-serif; 
  font-weight: 700;
+}
+.about-text{
+  font-family: Roboto, sans-serif;
+  color: var(--color-secondary-dark);
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 1.5;
+  
 }
 .color-blue{
   font-size: 64px;
@@ -178,8 +255,16 @@ nav
 
 
 /* button form */
+/* form action */
+.accent-about-blue{
+  color: var(--color-primary-blue);
+  font-weight: 700;
+}
+.form-text-form{
+  margin-top: 32px;
+}
 
-.button-form{
+.button-main{
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
@@ -201,7 +286,7 @@ nav
   font-family: Roboto, sans-serif;
   color: #4A4A4A;
   font-size: 12px;
-  font-weight: 400;
+  
   line-height: 1.5;
   
 }
@@ -230,11 +315,10 @@ nav
   font-weight: 400;
   line-height: 1.5;
 }
-/* form action */
-.accent-about-blue{
-  color: var(--color-primary-blue);
-  font-weight: 700;
+.section-why-us-section{
+  padding-top: 222px;
 }
+
 
 
 .address-link{
@@ -250,3 +334,24 @@ nav
   font-weight: 400;
   line-height: 1.5;
 }
+
+/* footer */
+
+.link-footer{
+ color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.address-link{
+  color: var(--color-primary-light);
+  text-decoration: none;
+  width: 400px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+ 
+
+
+

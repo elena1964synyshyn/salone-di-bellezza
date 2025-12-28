@@ -31,8 +31,8 @@
 
         <li><a class="link" href="#about-section">Про нас</a></li>
         <li><a class="link" href="#why-us-section">Чому ми</a></li>
-        <li><a class="link" href="#procedures-section">Наші процедури</a></li>
-        <li><a class="link" href="#contacts-section">Контакти</a></li>
+        <li><a class="link" href="#services-section">Наші процедури</a></li>
+        <li><a class="link" href="#form-section">Контакти</a></li>
 
       </ul>
       <ul >
@@ -46,7 +46,8 @@
   <main>
     
     <section class="hero" id="hero-section">
-   <h5 class="text">
+ <div class="container">
+    <h5 class="text">
 Косметологічна клініка
    </h5> 
    <h1 class="hero-text">Beauty 
@@ -54,25 +55,30 @@ Zone
 </h1>
 <button class="button-main" type="button">Замовити дзвінок</button>
 
-<p class="call-hero">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+<p class="form-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+ </div>
+</section>
 
 
 
 <!-- about-section -->
 
-<section class="about" id="about-section"> 
-  <h2 class="about-call">Перевтілюйтесь в <span class="color-blue">beauty zone!</span>
+<section class="section" id="about-section"> 
+ <div class="container">
+   <h2 class="about-call">Перевтілюйтесь в <span class="color-blue">beauty zone!</span>
   </h2> 
   <p class="about-text">Наша косметологічна клініка пропонує вам професійні послуги 
 з догляду за шкірою обличчя та тіла. </p>
 <p class="call">B <span class="accent-about">beauty zone</span> ми гарантуємо найвищі стандарти якості 
 та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. 
-З нами краса назавжди! </p>  
+З нами краса назавжди! </p>
+ </div>  
 </section>
 
 <!-- why-us-section -->
 
-<section class="why-us" id="why-us-section"> <h2 class="about-call">Чому люди <span class="color-blue">обирають нас</span>
+<section class="section-why-us-section" id="why-us-section">
+  <div class="container"><h2 class="about-call">Чому люди <span class="color-blue">обирають нас</span>
 </h2> 
 
   <p class="call">Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років
@@ -81,49 +87,46 @@ Zone
   <p class="call">Використовуємо тільки професійне обладнання та косметику, перевірену часом</p> 
   <p class="call">Наша мета — підкреслити переваги та приховати недоліки, а не переробити
 
-  </p> 
+  </p>
+ </div>
  </section>
  <!-- services-section -->
 
- <section class="services" id="services-section">
-  <h2 class="about-call">Як нас <span class="color-blue">знайти</span></h2>
-  <img src="./images/карта.png" alt="carta">
+ <section class="section" id="services-section">
+  <div class="container"><h2 class="about-call">Як нас <span class="color-blue">знайти</span></h2>
+  <img src="./images/карта.png" alt="carta"></div>
 
+</section>
+  <!-- form -->
 
- </section>
-  
-    
-
-
-  </main>
-    
-    
-    
-
-      <!-- <form action=""></form> -->
-
-       <h3 class="form">Запишіться <span class="accent-about-blue"> безкоштовно</span>
+<section class="section" id="form-section">
+ <div class="container"><h3 class="form">Запишіться <span class="accent-about-blue"> безкоштовно</span>
 та отримайте подарунок</h3>
-<p class="form-text">Ваше ім'я та прізвище</p>
-<p class="form-text">Ваша електронна пошта</p>
-<button class="button-form">Записатись безкоштовно</button>
-<ul>
-  <li class="form-text">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</li>
-</ul> 
+<p class="form-text-form">Ваше ім'я та прізвище</p>
+<p class="form-text-phone">Ваш номер телефону</p>
+<p class="form-text-email">Ваша електронна пошта</p>
+
+<button class="button-main" type="button">Записатись безкоштовно</button>
+<p class="form-text">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p></div>
+
+</section>
+  
+</main>
 
 <!-- footer -->
       
     <footer>
+      <div class="container">
       <nav>
         <a href="./">
           <img src="./images/logo.svg" alt="logo beauty zone">
         </a>
         <ul>
 
-          <li><a class="address-link" href="#about-section">Про нас</a></li>
-          <li><a class="address-link" href="#why-us-section">Чому ми</a></li>
-          <li><a class="address-link" href="#procedures-section">Наші процедури</a></li>
-          <li><a class="address-link" href="#contacts-section">Контакти</a></li>
+           <li><a class="link-footer" href="#about-section">Про нас</a></li>
+        <li><a class="link-footer" href="#why-us-section">Чому ми</a></li>
+        <li><a class="link-footer" href="#services-section">Наші процедури</a></li>
+        <li><a class="link-footer" href="#form-section">Контакти</a></li>
 
         </ul>
         <ul>
@@ -156,7 +159,18 @@ Zone
         <a class="address-link" href="#" target="_blank">Політика конфіденційност</a>
         <p class="address-copyright">© 2022 Дані захищені</p>
       </address>
+      </div>
     </footer>
+  
+    
+
+
+    
+    
+    
+
+      
+
 
   
 
