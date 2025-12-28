@@ -67,7 +67,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
-  font-size: 18px;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0;
   }
@@ -136,7 +136,7 @@ ul {
   color: var(--color-primary-dark);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 500px;
   
 }
 
@@ -176,7 +176,7 @@ nav ul:last-child img:hover {
   color: var(--color-primary-blue);
   font-size: 140px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 700px;
 }
   
 .text{
@@ -200,7 +200,7 @@ nav ul:last-child img:hover {
   line-height: 1.6;
   color: var(--color-secondary-light);
   margin: 0 auto;
-  font-weight: 400;
+  font-weight: 400px;
   
 }
   
@@ -210,7 +210,7 @@ nav ul:last-child img:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 600px;
   border: 1px solid var(--color-primary-blue);
   padding: 16px 32px;
   border-radius: 32px;
@@ -232,7 +232,7 @@ nav ul:last-child img:hover {
  margin-bottom: 40px;
  font-size: 64px;
  font-family: play, sans-serif; 
- font-weight: 700;
+ font-weight: 700px;
 }
 .about-text{
   font-family: Roboto, sans-serif;
@@ -250,7 +250,7 @@ nav ul:last-child img:hover {
 }
 .accent-about{
   color: var(--color-primary-dark);
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 
@@ -258,7 +258,7 @@ nav ul:last-child img:hover {
 /* form action */
 .accent-about-blue{
   color: var(--color-primary-blue);
-  font-weight: 700;
+  font-weight: 700px;
 }
 .form-text-form{
   margin-top: 32px;
@@ -268,7 +268,7 @@ nav ul:last-child img:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 600px;
   border: none;
   padding: 16px 32px;
   border-radius: 32px;
@@ -297,7 +297,7 @@ nav ul:last-child img:hover {
   
   font-family: Play, sans-serif;
   color: var(--color-primary-dark);
-  font-size: 64px;font-weight: 700;
+  font-size: 64px;font-weight: 700px;
   line-height: 1.5;
 }
 .hero-call{
@@ -312,7 +312,7 @@ nav ul:last-child img:hover {
 .hero-title .accent{
   color: var(--color-secondary-light);
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1.5;
 }
 .section-why-us-section{
@@ -331,7 +331,7 @@ nav ul:last-child img:hover {
 .address-copyrigh{
   color: var(--color-secondary-light);
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1.5;
 }
 
@@ -341,7 +341,7 @@ nav ul:last-child img:hover {
  color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
   
 }
 .address-link{
