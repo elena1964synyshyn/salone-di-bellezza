@@ -252,7 +252,7 @@ nav ul:last-child img:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   border: 1px solid var(--color-primary-blue);
   padding: 16px 32px;
   border-radius: 32px;
@@ -270,16 +270,25 @@ nav ul:last-child img:hover {
   color: var(--color-primary-blue);
 }
 
-/* <!-- why-us-section --> */
+/* <!-- about-section --> */
+
 .about-call-container {
   display: flex;
+  width: auto;
+  height: auto;
   gap: 32px;
 
 }
 
+.about-img {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 
-
-
+.about-img-2 {
+  padding-left: 204px;
+}
 
 .about-call {
   color: var(--color-primary-dark);
@@ -298,6 +307,10 @@ nav ul:last-child img:hover {
 
 }
 
+.about-text {
+  max-width: 570px;
+}
+
 .color-blue {
   font-size: 64px;
   font-family: play, sans-serif;
@@ -307,7 +320,7 @@ nav ul:last-child img:hover {
 
 .accent-about {
   color: var(--color-primary-dark);
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 
@@ -315,7 +328,7 @@ nav ul:last-child img:hover {
 /* form action */
 .accent-about-blue {
   color: var(--color-primary-blue);
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .form-text-form {
@@ -326,7 +339,7 @@ nav ul:last-child img:hover {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   border: none;
   padding: 16px 32px;
   border-radius: 32px;
@@ -359,7 +372,7 @@ nav ul:last-child img:hover {
   font-family: Play, sans-serif;
   color: var(--color-primary-dark);
   font-size: 64px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -376,7 +389,7 @@ nav ul:last-child img:hover {
 .hero-title .accent {
   color: var(--color-secondary-light);
   font-size: 12px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -389,7 +402,7 @@ nav ul:last-child img:hover {
 .address-link {
   color: var(--color-primary-light);
   text-decoration: none;
-  width: 400px;
+  width: 400;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -407,7 +420,7 @@ nav ul:last-child img:hover {
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
 
 }
 
