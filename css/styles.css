@@ -224,7 +224,7 @@ nav ul:last-child img:hover {
   font-family: Roboto, sans-serif;
   color: var(--color-primary-dark);
   font-size: 18px;
-  margin: autondex.html and styles.css;
+  margin: 0 auto;
   line-height: 1.2;
 
   text-align: left;
