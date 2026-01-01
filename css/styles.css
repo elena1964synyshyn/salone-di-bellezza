@@ -209,26 +209,36 @@ nav ul:last-child img:hover {
 /* hero section */
 
 
+.container-hero {
 
-.hero-text {
-  font-family: Play, sans-serif;
-  color: var(--color-primary-blue);
-  font-size: 140px;
-  margin: 16px;
-  line-height: 1.2;
-  font-weight: 700px;
+  padding-left: 106px;
+  padding-top: 60px;
+
+
+
+
 }
+
+
 
 .text {
 
   font-family: Roboto, sans-serif;
   color: var(--color-primary-dark);
   font-size: 18px;
-  margin: 0 auto;
   line-height: 1.2;
-
   text-align: left;
 }
+
+.hero-text {
+
+  color: var(--color-primary-blue);
+  font-size: 140px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
 
 .call-hero {
   font-family: 'Roboto', serif;
@@ -246,8 +256,11 @@ nav ul:last-child img:hover {
 
 }
 
-
 /* button */
+.container-button-main {
+  justify-content: center;
+}
+
 .button-main {
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
@@ -274,13 +287,18 @@ nav ul:last-child img:hover {
 
 .about-call-container {
   display: flex;
-  width: auto;
-  height: auto;
-  gap: 32px;
+  justify-content: space-between;
+
+  gap: 40px;
 
 }
 
+.about-call-content {
+  max-width: 570px;
+}
+
 .about-img {
+
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -292,11 +310,13 @@ nav ul:last-child img:hover {
 
 .about-call {
   color: var(--color-primary-dark);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   font-size: 64px;
-  font-family: play, sans-serif;
-  font-weight: 700;
+
+
 }
+
+
 
 .about-text {
   font-family: Roboto, sans-serif;
@@ -307,9 +327,9 @@ nav ul:last-child img:hover {
 
 }
 
-.about-text {
+/* .about-text:last-child {
   max-width: 570px;
-}
+} */
 
 .color-blue {
   font-size: 64px;
