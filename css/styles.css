@@ -67,6 +67,9 @@ body {
 
   font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
+  background-image: url('../images/background-beaty-zone.png');
+  background-position: center 895px;
+  background-repeat: no-repeat;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
@@ -112,21 +115,28 @@ ul {
 
 }
 
-
+/* .header-section{
+background-color: rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(5px);
+} */
 
 
 .header-container {
+  background-color: transparent;
+
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
 .header-nav {
+
   padding: 42px 0;
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
+
 }
 
 .header-menu {
@@ -138,8 +148,7 @@ ul {
 
 .header-icon:last-child {
   display: flex;
-  width: 32px;
-  height: 32px;
+
   gap: 16px;
   align-items: center;
 
@@ -148,25 +157,6 @@ ul {
 
 /* link */
 
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  gap: 40px;
-} */
-
-
-
-
-/* nav ul {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-} */
 
 
 
@@ -189,8 +179,7 @@ ul {
 
 /* Іконки соцмереж */
 nav ul:last-child img {
-  width: 32px;
-  height: 32px;
+
   cursor: pointer;
   opacity: 0.8;
 
@@ -209,17 +198,23 @@ nav ul:last-child img:hover {
 /* hero section */
 
 
+.hero {
+  background-image: url('../images/doc.jpg');
+  /* background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
 .container-hero {
 
   padding-left: 106px;
   padding-top: 60px;
 
-
-
-
 }
-
-
 
 .text {
 
@@ -234,8 +229,11 @@ nav ul:last-child img:hover {
 
   color: var(--color-primary-blue);
   font-size: 140px;
-  line-height: 1.2;
+  line-height: 0.81;
+  max-width: 529px;
   font-weight: 700;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 
@@ -251,7 +249,8 @@ nav ul:last-child img:hover {
   padding-top: 14px;
   line-height: 1.3;
   color: var(--color-secondary-light);
-  margin: 0 auto;
+  padding-bottom: 126px;
+  align-items: center;
   font-weight: 400;
 
 }
@@ -259,6 +258,7 @@ nav ul:last-child img:hover {
 /* button */
 .container-button-main {
   justify-content: center;
+
 }
 
 .button-main {
@@ -270,6 +270,7 @@ nav ul:last-child img:hover {
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
+  padding: 40px 0 14px;
 
 }
 
@@ -286,6 +287,7 @@ nav ul:last-child img:hover {
 /* <!-- about-section --> */
 
 .about-call-container {
+
   display: flex;
   justify-content: space-between;
 
@@ -310,11 +312,19 @@ nav ul:last-child img:hover {
 
 .about-call {
   color: var(--color-primary-dark);
+  max-width: 570px;
+
   padding-bottom: 40px;
   font-size: 64px;
-
+  margin: 0 auto 48px;
 
 }
+
+.about-call .centered {
+  text-align: center;
+}
+
+
 
 
 
@@ -327,9 +337,7 @@ nav ul:last-child img:hover {
 
 }
 
-/* .about-text:last-child {
-  max-width: 570px;
-} */
+
 
 .color-blue {
   font-size: 64px;
@@ -413,10 +421,40 @@ nav ul:last-child img:hover {
   line-height: 1.5;
 }
 
+/* section-why-us-section */
+
 .section-why-us-section {
   padding-top: 222px;
 }
 
+.about-call-blok {
+  display: flex;
+}
+
+.call-card {
+  max-width: 316px;
+  max-height: 181px;
+  border-radius: 32px;
+  background-color: var(--color-primary-light);
+  box-shadow: 0px 4px 4px 0 #A8C6F561;
+
+}
+
+/* section-procedures */
+.format-procedures {
+  flex-basis: calc((100%-32px)/3);
+
+}
+
+.procedures-card {
+  background-image: url('../images/masage.jpg');
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 
 
 .address-link {
@@ -450,4 +488,12 @@ nav ul:last-child img:hover {
   width: 400px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.footer {
+  background-image: url(../images/background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
