@@ -460,19 +460,19 @@ nav ul:last-child img:hover {
   cursor: pointer;
 }
 
-/* .about-arrow {
+.about-arrow {
 
   fill: var(--color-primary-blue);
 
 
-} */
+}
 
 .carousel-button .hover {
   background-color: var(--color-primary-blue);
   fill: var(--color-primary-light);
 }
 
-/* .carousel-button:hover .about-arrow { */
+.carousel-button:hover .about-arrow {
   fill: var(--color-primary-light);
 }
 
