@@ -443,14 +443,32 @@ nav ul:last-child img:hover {
 
 }
 
-.procedures-card {
-  background-image: url('../images/masage.jpg');
+/* /arrow */
+
+.carusel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: var(--color-primary-light);
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
 }
 
-.procedures-list {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+.about-arrow {
+
+  fill: var(--color-primary-dark);
+
+}
+
+.carusel-button:hover  {
+  background-color:var(--color-primary-blue);
+}
+.carusel-button:hover .about-arrow{
+  fill: var(--color-primary-light);
 }
 
 
@@ -486,6 +504,14 @@ nav ul:last-child img:hover {
   font-size: 16px;
   line-height: 1.5;
 }
+
+.address-social {
+
+  stroke: var(--color-primary-light);
+}
+
+
+
 
 .footer {
   background-image: url(../images/background.png);
