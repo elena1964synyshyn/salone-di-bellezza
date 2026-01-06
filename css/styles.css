@@ -469,10 +469,11 @@ nav ul:last-child img:hover {
 
 .carousel-button .hover {
   background-color: var(--color-primary-blue);
-  fill: var(--color-primary-light);
+
 }
 
 .carousel-button:hover .about-arrow {
+
   fill: var(--color-primary-light);
 }
 
