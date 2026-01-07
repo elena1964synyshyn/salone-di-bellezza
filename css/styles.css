@@ -59,6 +59,7 @@
   --color-primary-dark: #011C44;
   --color-secondary-dark: #4A4A4A;
   --color-secondary-light: #747272;
+  --color-unico-black: #000000;
 
 }
 
@@ -424,28 +425,96 @@ nav ul:last-child img:hover {
   padding-top: 222px;
 }
 
-.about-call-blok {
+.call-card-blok {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
 }
 
 .call-card {
+  font-family: Roboto, sans-serif;
+  color: var(--color-unico-black);
+  padding: 8px;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+}
 
+.about-call-blok {
+  background-color: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 32px;
   max-width: 316px;
   max-height: 181px;
   border-radius: 32px;
-  background-color: var(--color-primary-light);
   box-shadow: 0px 4px 4px 0 #A8C6F561;
-
 }
 
+.img-card {
+  padding-top: 32px;
+}
+
+
 /* section-procedures */
-.format-procedures {
+
+
+.procedures-card {
+  overflow: hidden;
+  border-radius: 120px 4px 120px 4px;
+  position: relative;
+}
+
+/* gradient overlay on procedure cards */
+.procedures-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+  
+  
+}
+
+/* .procedures-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  } */
+
+
+
+
+
+
+
+
+.about-text {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-primary-light);
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.format-item {
 
   flex-basis: calc((100%-32px)/3);
 
 }
+
+
+
+
 
 /* /arrow */
 
@@ -470,7 +539,7 @@ nav ul:last-child img:hover {
 
 }
 
-.carousel-button :hover {
+.carousel-button:hover {
   background-color: var(--color-primary-blue);
 
 }
@@ -480,11 +549,18 @@ nav ul:last-child img:hover {
   fill: var(--color-primary-light);
 }
 
+.about-call {
+  margin-top: 96px;
+  text-align: center;
+}
+
 .procedures-list {
   display: flex;
   justify-content: center;
   gap: 32px;
 }
+
+
 
 .address-link {
   color: var(--color-primary-light);
