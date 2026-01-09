@@ -139,91 +139,101 @@
 
     <!-- section-procedures -->
 
+
     <section class="section-procedures" id="procedures-section">
-
       <div class="container">
-        <h2 class="about-call">Наші <span class="color-blue">процедури</span>
-        </h2>
-        <button class="carousel-button" type="button">
-          <svg class="about-arrow" width="16" height="16">
-            <use href="./images/arrow.svg#icon-arrow1"></use>
-          </svg>
-        </button>
+        <h2 class="about-call">Наші <span class="color-blue">процедури</span></h2>
 
-        <ul class="procedures-list">
-          <li class="format-item">
-            <article class="procedures-card">
-              <div class="procedures-item">
+        <div class="procedures-container">
+          <!-- Ліва стрілка -->
+          <button class="carousel-button carousel-button-prev" type="button">
+            <svg class="about-arrow" width="16" height="16">
+              <use href="./images/arrow.svg#icon-arrow1"></use>
+            </svg>
+          </button>
 
+          <!-- Слайдер -->
+          <ul class="procedures-list">
+            <li class="format-item">
+              <article class="procedures-card">
                 <img src="./images/masage.jpg" alt="massage">
-                <h3 class="about-text">
-                  Маски
-                  для обличчя
-                </h3>
+                <h3 class="about-text-procedures">Маски для обличчя</h3>
+              </article>
+            </li>
 
-            </article>
+            <li class="format-item">
+              <article class="procedures-card">
+                <img src="./images/siring.jpg" alt="siring">
+                <h3 class="about-text-procedures">Ін'єкції для обличчя</h3>
+              </article>
+            </li>
 
-          </li>
+            <li class="format-item">
+              <article class="procedures-card">
+                <img src="./images/chistca.jpg" alt="chistca">
+                <h3 class="about-text-procedures">Очищення обличчя</h3>
+              </article>
+            </li>
+          </ul>
 
-          <li class="format-item">
-            <article class="procedures-card">
-
-              <img src="./images/siring.jpg" alt="siring">
-              <h3 class="about-text">
-                Ін'єкції
-                для обличчя
-              </h3>
-            </article>
-          </li>
-          <li class="format-item">
-            <article class="procedures-card">
-              <img src="./images/chistca.jpg" alt="chistca">
-              <h3 class="about-text">
-                Очищення
-                обличчя
-              </h3>
-
-
+          <!-- Права стрілка -->
+          <button class="carousel-button carousel-button-next" type="button">
+            <svg class="about-arrow about-arrow-next" width="16" height="16">
+              <use href="./images/arrow.svg#icon-arrow1"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      </article>
-
-
-      </li>
-      </ul>
-      <button class="carousel-button" type="button">
-        <svg class="about-arrow" width="16" height="16">
-          <use href="./images/arrow.svg#icon-arrow1"></use>
-        </svg>
-      </button>
-      </div>
-
-    </section>
-    <!-- services-section -->
-
-    <section class="section" id="services-section">
-      <div class="container">
-        <h2 class="about-call">Як нас <span class="color-blue">знайти</span></h2>
-        <img src="./images/карта.png" alt="carta">
-      </div>
-
-    </section>
-    <!-- form -->
-
-    <section class="section" id="form-section">
-      <div class="container">
-        <h3 class="form">Запишіться <span class="accent-about-blue"> безкоштовно</span>
-          та отримайте подарунок</h3>
-        <p class="form-text-form">Ваше ім'я та прізвище</p>
-        <p class="form-text-phone">Ваш номер телефону</p>
-        <p class="form-text-email">Ваша електронна пошта</p>
-
-        <button class="button-main" type="button">Записатись безкоштовно</button>
-        <p class="form-text">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
-      </div>
-
     </section>
 
+    <!-- contact -->
+
+    
+  <section class=" contact-section section" id="form-section">
+    <div class="container">
+      <h2 class="about-call">Як нас <span class="color-blue">знайти</span></h2>
+  
+      <div class="contact-container">
+  
+        <!-- Карта слева -->
+        <div class="contact-map">
+          <img src="./images/карта.png" alt="carta">
+        </div>
+  
+        <!-- Форма справа -->
+        <div class="contact-form">
+          <h3 class="form">Запишіться <span class="accent-about-blue">безкоштовно</span>
+            та отримайте подарунок</h3>
+  
+          <form class="form-fields">
+            <label class="form-label">
+              <span class="form-text-form">Ваше ім'я та прізвище</span>
+              <input type="text" name="name" class="form-input" placeholder="Введіть ім'я" required>
+            </label>
+  
+            <label class="form-label">
+              <span class="form-text-phone">Ваш номер телефону</span>
+              <input type="tel" name="phone" class="form-input" placeholder="+380" required>
+            </label>
+  
+            <label class="form-label">
+              <span class="form-text-email">Ваша електронна пошта</span>
+              <input type="email" name="email" class="form-input" placeholder="example@mail.com" required>
+            </label>
+  
+            <button class="button-main" type="submit">Записатись безкоштовно</button>
+  
+            <p class="form-text">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </section>
   </main>
+
+
+
 
   <!-- footer -->
 
