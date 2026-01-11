@@ -85,6 +85,10 @@ h6 {
   font-family: 'Play', sans-serif;
 }
 
+a {
+  display: inline-block;
+}
+
 .button {
 
   font-family: inherit;
@@ -461,20 +465,29 @@ nav ul:last-child img:hover {
 
 /* section-procedures */
 
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 
 .procedures-card {
   overflow: hidden;
   border-radius: 120px 4px 120px 4px;
   position: relative;
-
+  z-index: 2;
 }
 
-.procedures-card::after {
+.procedures-card::before {
   content: '';
   position: absolute;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
   background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
-  pointer-events: none;
+
 }
 
 .procedures-container {
@@ -493,8 +506,7 @@ nav ul:last-child img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
   flex-shrink: 0;
 }
 
@@ -621,6 +633,34 @@ nav ul:last-child img:hover {
 }
 
 /* footer */
+.footer {
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
+
 
 .link-footer {
   color: var(--color-primary-light);
@@ -638,13 +678,17 @@ nav ul:last-child img:hover {
   line-height: 1.5;
 }
 
+.address-copyright {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  font-weight: 400px;
+  line-height: 1.5;
+}
+
 .address-social {
 
   stroke: var(--color-primary-light);
 }
-
-
-
 
 .footer {
   background-image: url(../images/background.png);
