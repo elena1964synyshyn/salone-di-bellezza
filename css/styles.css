@@ -288,29 +288,61 @@ nav ul:last-child img:hover {
 
 /* <!-- about-section --> */
 
-.about-call-container {
 
+.about-call-container {
   display: flex;
   justify-content: space-between;
-
   gap: 40px;
 
 }
 
 .about-call-content {
-  max-width: 570px;
-}
-
-.about-img {
-
   display: flex;
-  justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  max-width: 570px;
+
 }
 
-.about-img-2 {
-  padding-left: 204px;
+.about-images {
+  flex-direction: column;
+  flex: 1;
+  position: relative;
 }
+
+.image-container {
+  position: relative;
+  width: 350px;
+}
+
+.before-image img {
+ 
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+
+}
+
+  
+
+
+
+.after-image img {
+  position: absolute;
+ 
+  left: 150px;
+  top: 0x;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
 
 .about-call {
   color: var(--color-primary-dark);
