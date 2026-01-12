@@ -304,44 +304,22 @@ nav ul:last-child img:hover {
 }
 
 .about-images {
-  flex-direction: column;
-  flex: 1;
-  position: relative;
+  display: wrap;
+  gap: 16px;
+  width: 327px;
+  height: 327px;
+
 }
 
-.image-container {
-  position: relative;
-  width: 350px;
-}
+.about-images img {
 
-.before-image img {
- 
-  width: 320px;
-  height: 320px;
+  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 30px;
-
 }
 
-  
-
-
-
-.after-image img {
-  position: absolute;
- 
-  left: 150px;
-  top: 0x;
-  border-radius: 50%;
-  overflow: hidden;
+.about-img-women {
+  margin-left: 204px;
 }
-
-
-
-
-
-
-
 
 
 .about-call {
@@ -359,9 +337,6 @@ nav ul:last-child img:hover {
 }
 
 
-
-
-
 .about-text {
   font-family: Roboto, sans-serif;
   color: var(--color-secondary-dark);
@@ -370,8 +345,6 @@ nav ul:last-child img:hover {
   line-height: 1.5;
 
 }
-
-
 
 .color-blue {
   font-size: 64px;
@@ -384,6 +357,24 @@ nav ul:last-child img:hover {
   color: var(--color-primary-dark);
   font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* button form */
