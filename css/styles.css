@@ -70,11 +70,12 @@ body {
   color: var(--color-primary-dark);
   background-image: url('../images/background-beaty-zone.png');
   background-position: center;
+  min-width: 100%;
 
   background-repeat: no-repeat;
   font-weight: 400;
   line-height: 1.5;
-  margin: 0;
+  margin-bottom: 300px;
 }
 
 h1,
@@ -656,18 +657,55 @@ nav ul:last-child img:hover {
 /* footer */
 .footer {
   padding: 56px 0;
+  position: relative;
+  background-image: url(../images/background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+
 }
+
+.footer::before {
+  content: '';
+  background-image: url('../images/beaty-product.png');
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  width: 247px;
+  height: 152px;
+
+  right: 0;
+
+  z-index: 1;
+
+}
+
 
 .footer-container {
   display: flex;
 
   gap: 20px;
+
 }
+
+.link-footer {
+  padding: 0 0 16px 0;
+}
+
+.address-link {
+  padding: 0 0 16px 0;
+}
+
+
 
 .footer-nav,
 .footer-address {
+
   display: flex;
-  /*  justify-content: space-between;*/
+  justify-content: space-between;
   flex-basis: 50%;
   gap: 20px;
 }
@@ -676,6 +714,7 @@ nav ul:last-child img:hover {
 .footer-menu {
   flex-grow: 1;
   gap: 20px;
+
 }
 
 .address-list,
@@ -686,6 +725,7 @@ nav ul:last-child img:hover {
 
 
 .link-footer {
+
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
@@ -708,26 +748,50 @@ nav ul:last-child img:hover {
   line-height: 1.5;
 }
 
+.address-social-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+  padding-left: 0;
+}
+
 .address-social {
+
 
   stroke: var(--color-primary-light);
 }
 
-.footer {
-  background-image: url(../images/background.png);
-  background-color: var(--color-primary-dark);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  background-position: center;
+/* modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #011F4A66;
 }
 
-.footer-decor {
-  position: absolute;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-  right: 0;
-  width: 278px;
-  height: auto;
-  z-index: 1;
-  object-fit: contain;
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+}
+
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }

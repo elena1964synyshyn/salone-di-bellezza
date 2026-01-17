@@ -68,7 +68,7 @@
             Zone
           </h1>
 
-          <button class="button-main" type="button">Замовити дзвінок</button>
+          <button class="button-main modal-btn-open" type="button">Замовити дзвінок</button>
 
           <p class="form-text">Запишись та отримай безкоштовну <br> консультацію нашого косметолога</p>
 
@@ -260,27 +260,7 @@
             <li><a class="link-footer" href="#form-section">Контакти</a></li>
 
 
-            <li>
-              <a href="#">
-                <svg class="address-social" width="32" height="32">
-                  <use href="/images/icons.svg#icon-phon1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-social" width="32" height="32">
-                  <use href="/images/icons.svg#icon-facebook2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-social" width="32" height="32">
-                  <use href="/images/icons.svg#icon-instagram1"></use>
-                </svg>
-              </a>
-            </li>
+
           </ul>
 
 
@@ -298,6 +278,29 @@
                 вул. Тараса Шевченка 5</a>
 
             </li>
+            <ul class="address-social-icon">
+              <li>
+                <a href="#">
+                  <svg class="address-social" width="32" height="32">
+                    <use href="/images/icons.svg#icon-phon1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-social" width="32" height="32">
+                    <use href="/images/icons.svg#icon-facebook2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-social" width="32" height="32">
+                    <use href="/images/icons.svg#icon-instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </ul>
           <div class="addresss-info">
             <a class="address-link" href="#" target="_blank">Політика конфіденційност</a>
@@ -306,9 +309,17 @@
         </address>
       </div>
     </div>
-    <img class="footer-decor" src="./images/beaty-product.png" alt="beaty product">
-  </footer>
 
+  </footer>
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">close
+
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
