@@ -68,7 +68,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
-  /* background-image: url('../images/background-beaty-zone.png'); */
+  background-image: url('../images/background-beaty-zone.png');
   background-position: center;
 
   background-repeat: no-repeat;
@@ -307,13 +307,15 @@ nav ul:last-child img:hover {
   display: flex;
   flex-direction: column;
   max-width: 570px;
+  text-align: left;
 
 }
 
 .about-images {
+
   padding-right: 40px;
-  max-width: 499px;
-  gap: 16px;
+  padding-top: 40px;
+
   width: 327px;
   height: 327px;
 
@@ -323,6 +325,7 @@ nav ul:last-child img:hover {
 
   object-fit: cover;
   border-radius: 50%;
+  margin-right: auto;
 }
 
 .about-img-women {
@@ -330,15 +333,18 @@ nav ul:last-child img:hover {
 }
 
 
-.about-call {
+.about-call-about {
   color: var(--color-primary-dark);
+  font-size: 64px;
+  font-family: play, sans-serif;
+  font-weight: 700;
   max-width: 570px;
-
-
   font-size: 64px;
   margin: 0 auto 48px;
-
+  text-align: left;
 }
+
+
 
 .about-call .centered {
   text-align: center;
@@ -442,6 +448,16 @@ nav ul:last-child img:hover {
 
 .section-why-us-section {
   padding-top: 222px;
+}
+
+.about-call {
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-family: play, sans-serif;
+  font-weight: 700;
+  max-width: 570px;
+  font-size: 64px;
+  margin: 0 auto 48px;
 }
 
 .call-card-blok {
