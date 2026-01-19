@@ -68,14 +68,18 @@ body {
 
   font-family: 'Roboto', sans-serif;
   color: var(--color-primary-dark);
-  background-image: url('../images/background-beaty-zone.png');
-  background-position: center;
-  min-width: 100%;
 
   background-repeat: no-repeat;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 300px;
+
+}
+
+body {
+  background-image: url('../images/background-beaty-zone.png');
+  background-position: center;
+  min-width: 100%;
+  margin-bottom: 500px;
 }
 
 h1,
@@ -299,10 +303,14 @@ nav ul:last-child img:hover {
 
 .about-call-container {
   display: flex;
-
   gap: 40px;
   margin: 0 auto;
+  position: relative;
 }
+
+
+
+
 
 .about-call-content {
   display: flex;
@@ -319,7 +327,7 @@ nav ul:last-child img:hover {
 
   width: 327px;
   height: 327px;
-
+  position: relative;
 }
 
 .about-images img {
@@ -331,7 +339,29 @@ nav ul:last-child img:hover {
 
 .about-img-women {
   margin-left: 204px;
+
 }
+
+.img-star-big {
+  position: absolute;
+  margin-top: -310px;
+  right: 93px;
+  z-index: 1;
+}
+
+.img-star-medium {
+  position: absolute;
+  margin-top: -634px;
+  right: -275px;
+}
+
+.img-star-small {
+
+  position: absolute;
+  margin-top: -433px;
+  right: -246px;
+}
+
 
 
 .about-call-about {
