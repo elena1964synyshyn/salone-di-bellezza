@@ -654,6 +654,31 @@ nav ul:last-child img:hover {
   flex-shrink: 0;
 }
 
+/* .contact-form {
+  background-color: #011C44;
+
+} */
+
+
+.form-field {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-field input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 /* footer */
 .footer {
   padding: 56px 0;
