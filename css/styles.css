@@ -903,6 +903,7 @@ nav ul:last-child img:hover {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
 }
 
 .modal {
