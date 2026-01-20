@@ -91,6 +91,11 @@ h6 {
   font-family: 'Play', sans-serif;
 }
 
+h2 {
+  line-height: 1.2;
+}
+
+
 a {
   display: inline-block;
 }
@@ -265,6 +270,7 @@ nav ul:last-child img:hover {
   color: var(--color-secondary-light);
   padding-bottom: 126px;
   align-items: center;
+
   font-weight: 400;
 
 }
@@ -313,6 +319,7 @@ nav ul:last-child img:hover {
 
 
 .about-call-content {
+  margin: 96px;
   display: flex;
   flex-direction: column;
   max-width: 570px;
@@ -370,6 +377,7 @@ nav ul:last-child img:hover {
   font-family: play, sans-serif;
   font-weight: 700;
   max-width: 570px;
+
   font-size: 64px;
   margin: 0 auto 48px;
   text-align: left;
@@ -465,6 +473,7 @@ nav ul:last-child img:hover {
 
 .form-text-form {
   margin-top: 32px;
+
 }
 
 .button-main {
@@ -528,7 +537,8 @@ nav ul:last-child img:hover {
 /* section-why-us-section */
 
 .section-why-us-section {
-  padding-top: 222px;
+
+  padding-top: 96px;
 }
 
 .about-call {
@@ -578,6 +588,7 @@ nav ul:last-child img:hover {
 /* section-procedures */
 
 .procedures-list {
+
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
