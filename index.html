@@ -210,37 +210,39 @@
           </div>
 
           <!-- Форма справа -->
-          <form class="input-form">
-            <div class="contact-form">
-              <h3 class="form">Запишіться <span class="accent-about-blue">безкоштовно</span>
-                та отримайте подарунок</h3>
-            </div>
-            <!-- <form> -->
+          <div class="contact">
+            <form name="contact-form" autocomplete="off">
+              <div class="contact-form-contact">
+                <h3 class="form">Запишіться <span class="accent-about-blue">безкоштовно</span>
+                  та отримайте подарунок</h3>
+              </div>
+              <!-- <form> -->
 
 
-            <div class="form-field">
-              <label>Введіть ім'я</label>
-              <input type="text" placeholder="Ваше ім'я та прізвище">
-            </div>
 
-            <div class="form-field">
-              <label>+3800960000007</label>
-              <input type="tel" placeholder="Ваш номер телефону">
-            </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+                <input class="form-input" type="text" id="user-name" name="user-name"
+                  placeholder="Ваше ім'я та прізвище">
+              </div>
+              <div class="form-field">
 
-            <div class="form-field">
-              <label>example@gmail.com</label>
-              <input type="email" placeholder="Ваша електронна пошта">
-            </div>
+                <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
+                <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону">
+              </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="user-email">Ваша електронна пошта</label>
+                <input class="form-input" type="email" id="user-email" name="user-email"
+                  placeholder="Ваша електронна пошта">
+              </div>
+              <button class="button-form" type="submit">Записатись безкоштовно</button>
+              <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
+                  конфіденційності</a></p>
+            </form>
 
-            <button class="button-form" type="submit">Записатись безкоштовно</button>
 
-            <p class="text-form">Натискаючи на кнопку я погоджуюсь з <a href="#" class="privacy-link"> політикою
-                конфіденційності</a></p>
+          </div>
         </div>
-        </form>
-
-      </div>
       </div>
     </section>
   </main>
@@ -323,6 +325,31 @@
       <button class="modal-btn-close" type="button"><img src="./images/check.svg" alt="">
 
       </button>
+      <div class="form-modal">
+        <h2 class="title-form">Замовити дзвінок</h2>
+        <h3 class="form">Запишіться <span class="accent-about-blue">безкоштовно</span>
+          та отримайте подарунок</h3>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище">
+          </div>
+          <div class="form-field">
+
+            <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
+            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону">
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">Ваша електронна пошта</label>
+            <input class="form-input" type="email" id="user-email" name="user-email"
+              placeholder="Ваша електронна пошта">
+          </div>
+          <button class="button-form" type="submit">Записатись безкоштовно</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
+              конфіденційності</a></p>
+        </form>
+
+      </div>
     </div>
   </div>
 
