@@ -329,20 +329,22 @@
         <h2 class="title-form">Замовити дзвінок</h2>
         <h3 class="form">Запишіться <span class="accent-about-blue">безкоштовно</span>
           та отримайте подарунок</h3>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
-            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище">
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище"
+              required>
           </div>
           <div class="form-field">
 
             <label class="form-label visually-hidden" for="user-tel">Ваш номер телефону</label>
-            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону">
+            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
+              required>
           </div>
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-email">Ваша електронна пошта</label>
-            <input class="form-input" type="email" id="user-email" name="user-email"
-              placeholder="Ваша електронна пошта">
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Ваша електронна пошта"
+              required>
           </div>
           <button class="button-form" type="submit">Записатись безкоштовно</button>
           <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою
