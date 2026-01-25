@@ -1,117 +1,17 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin-top: 0;
-  padding: 0;
-}
-
-@font-face {
-  font-display: swap;
-
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/play-v21-latin-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/play-v21-latin-700.woff2') format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/roboto-v50-latin-regular.woff2') format('woff2');
-
-}
-
-@font-face {
-  font-display: swap;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/roboto-v50-latin-700.woff2') format('woff2');
-
-}
-
-@font-face {
-  font-display: swap;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../fonts/roboto-v50-latin-800.woff2') format('woff2');
-}
-
-:root {
-  --color-primary-light: #FFFFFF;
-  --color-primary-blue: #007BFF;
-  --color-primary-dark: #011C44;
-  --color-secondary-dark: #4A4A4A;
-  --color-secondary-light: #747272;
-  --color-secondary-black: #000000;
-  --color-unico-black: #000000;
-}
-
-/* base */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--color-primary-dark);
-  background-image: url('../images/background-beaty-zone.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Play', sans-serif;
-}
-
-h2 {
-  line-height: 1.2;
-}
-
-
-a {
-  display: inline-block;
-}
-
-.button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
 
 
 
-address {
-  font-style: normal;
-}
+@import './utils/fonts.scss';
+@import './utils/variables.scss';
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+@import'./_base.scss';
+@import './utils/utils';
+
+
+
+
+
+
 
 .section {
   padding: 48px 0;
@@ -128,22 +28,22 @@ ul {
 header {
   background-color: transparent;
   position: relative;
+  .header-container {
+  
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px 99px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+  }
 }
 
-.header-container {
-
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 42px 99px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  box-sizing: border-box;
-}
 
 .header-nav {
   display: flex;
@@ -282,31 +182,7 @@ nav ul:last-child img:hover {
 /* button */
 
 
-.container-button-main {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
 
-.button-main {
-  background-color: var(--color-primary-blue);
-  color: var(--color-primary-light);
-  font-size: 18px;
-  font-weight: 600;
-  border: 1px solid var(--color-primary-blue);
-  padding: 16px 32px;
-  border-radius: 32px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button-main:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-blue);
-  border: 1px solid var(--color-primary-blue);
-}
 
 
 
@@ -355,8 +231,8 @@ nav ul:last-child img:hover {
 }
 
 .about-img-women {
-  top: 220px ;
-  margin-left: 297зpx;
+  top: 220px;
+  margin-left: 297px;
   z-index: 1;
 }
 

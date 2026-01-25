@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin-top: 0;
-  padding: 0;
-}
-
 @font-face {
   font-display: swap;
   font-family: "Play";
@@ -58,7 +50,14 @@
   --color-unico-black: #000000;
 }
 
-/* base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-primary-dark);
@@ -88,13 +87,6 @@ a {
   display: inline-block;
 }
 
-.button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
 address {
   font-style: normal;
 }
@@ -103,6 +95,39 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container-button-main {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-main {
+  background-color: var(--color-primary-blue);
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid var(--color-primary-blue);
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-main:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-blue);
+  border: 1px solid var(--color-primary-blue);
 }
 
 .section {
@@ -121,7 +146,7 @@ header {
   position: relative;
 }
 
-.header-container {
+header .header-container {
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -238,32 +263,6 @@ nav ul:last-child img:hover {
 }
 
 /* button */
-.container-button-main {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.button-main {
-  background-color: var(--color-primary-blue);
-  color: var(--color-primary-light);
-  font-size: 18px;
-  font-weight: 600;
-  border: 1px solid var(--color-primary-blue);
-  padding: 16px 32px;
-  border-radius: 32px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button-main:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-blue);
-  border: 1px solid var(--color-primary-blue);
-}
-
 /* <!-- about-section --> */
 .about-call-container {
   display: flex;
@@ -290,7 +289,9 @@ nav ul:last-child img:hover {
 
 .about-images img {
   position: absolute;
-
+  width: 280px;
+  height: 280px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -304,7 +305,6 @@ nav ul:last-child img:hover {
 .about-img-women {
   top: 220px;
   margin-left: 297px;
-  margin-top: 140px;
   z-index: 1;
 }
 
@@ -312,8 +312,8 @@ nav ul:last-child img:hover {
   position: absolute;
   width: 48px;
   height: 48px;
-  top: 351px;
-  right: 420px;
+  top: 10px;
+  right: 10px;
   z-index: 3;
 }
 
@@ -321,7 +321,7 @@ nav ul:last-child img:hover {
   position: absolute;
   width: 36px;
   height: 36px;
-  top: 57px;
+  top: 200px;
   right: -20px;
   z-index: 3;
 }
@@ -330,7 +330,7 @@ nav ul:last-child img:hover {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 285px;
+  top: 320px;
   right: 60px;
   z-index: 2;
 }
@@ -410,7 +410,6 @@ nav ul:last-child img:hover {
 }
 
 .button-form {
-
   background-color: var(--color-primary-blue);
   color: var(--color-primary-light);
   font-size: 18px;
@@ -676,15 +675,13 @@ nav ul:last-child img:hover {
   display: block;
 }
 
-.button-main-contact .address-copyright {
+.address-copyright {
   color: var(--color-secondary-light);
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
 }
-
-
 
 /* contact */
 .contact-section {
@@ -727,17 +724,10 @@ nav ul:last-child img:hover {
   justify-content: flex-start;
 }
 
-.form-contact-form {
-  max-width: 245px;
-  text-align: center;
-  color: var(--color-primary-light);
-
-}
-
 .contact .form-field {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -757,6 +747,11 @@ nav ul:last-child img:hover {
   color: var(--color-primary-light);
   font-family: "Roboto", sans-serif;
   transition: all 0.3s ease;
+}
+
+.contact .form-field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
 }
 
 .contact .form-field input::placeholder {
@@ -779,36 +774,6 @@ nav ul:last-child img:hover {
   font-family: "Roboto", sans-serif;
   margin: 0 0 32px 0;
   text-align: center;
-}
-
-.button-main-contact {
-  display: block;
-  margin: 24px auto 24px;
-  background-color: var(--color-primary-blue);
-  color: var(--color-primary-light);
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  padding: 16px 32px;
-  border-radius: 32px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button-main-contact:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-blue);
-  border: 1px solid var(--color-primary-blue);
-}
-
-.form-terms-form {
-  margin: 0 8px;
-  color: var(--color-secondary-light);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  text-align: center;
-
 }
 
 .contact .form .accent-about-blue {
@@ -864,7 +829,7 @@ nav ul:last-child img:hover {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-
+  gap: 20px;
 }
 
 .address-list,
@@ -907,7 +872,7 @@ nav ul:last-child img:hover {
   font-size: 13px;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
-
+  margin-top: auto;
 }
 
 .address-social-icon {
@@ -964,7 +929,8 @@ nav ul:last-child img:hover {
   position: absolute;
   top: 40px;
   right: 40px;
-
+  background: none;
+  border: none;
   cursor: pointer;
   padding: 0;
   width: 24px;
@@ -975,25 +941,18 @@ nav ul:last-child img:hover {
   transition: transform 0.3s ease;
 }
 
-.
-/* form */
+.modal-btn-close:hover {
+  transform: rotate(90deg);
+}
 
+/* form */
 .form-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.modal-text-title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title-form {
-
-  align-items: center;
   font-size: 64px;
   text-align: center;
   margin-bottom: 24px;
@@ -1006,21 +965,19 @@ nav ul:last-child img:hover {
 .form-header {
   text-align: center;
   margin-bottom: 32px;
-
+  font-family: "Roboto", sans-serif;
 }
 
 .modal form {
-
+  width: 100%;
+  max-width: 400px;
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: center;
 }
 
-
-
 .modal .form-field {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1040,7 +997,6 @@ nav ul:last-child img:hover {
 }
 
 .form-input {
-  display: block;
   padding: 18px 32px;
   width: 100%;
   max-width: 310px;
@@ -1058,6 +1014,12 @@ nav ul:last-child img:hover {
   background-color: transparent;
   outline: none;
   color: var(--color-primary-light);
+}
+
+.form-input::-moz-placeholder {
+  color: var(--color-primary-light);
+  font-size: 13px;
+  opacity: 0.7;
 }
 
 .form-input::placeholder {
@@ -1083,15 +1045,14 @@ nav ul:last-child img:hover {
   border-radius: 32px;
   cursor: pointer;
   transition: all 0.3s ease;
-
+  font-family: "Roboto", sans-serif;
 }
 
+.contact .form-terms-form {
 
 
-.form-terms {
-  max-width: 204px;
-  margin: 0;
-  color: var(--color-secondary-light);
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.4;
@@ -1108,12 +1069,6 @@ nav ul:last-child img:hover {
 
 .contact .form-terms-link:hover {
   color: var(--color-secondary-light);
-}
-
-.form-terms-link {
-  color: var(--color-secondary-light);
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .visually-hidden {
