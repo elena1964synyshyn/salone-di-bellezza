@@ -1,0 +1,46 @@
+header {
+  background-color: transparent;
+  position: relative;
+
+  .header-container {
+
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px 99px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+  }
+}
+
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 42px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 54px;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-icon:last-child {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header-nav-icon {
+  display: flex;
+  align-items: center;
+}
