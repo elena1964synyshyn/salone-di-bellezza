@@ -412,6 +412,8 @@ nav ul:last-child img:hover {
   justify-content: center;
 }
 
+
+
 .input-form {
   background-color: var(--color-primary-dark);
   max-width: 423px;
@@ -961,6 +963,7 @@ nav ul:last-child img:hover {
   width: 100%;
   max-width: 723px;
   max-height: 90vh;
+
   background-color: var(--color-primary-dark);
   border-radius: 48px;
   overflow: hidden;
@@ -1027,6 +1030,7 @@ nav ul:last-child img:hover {
 }
 
 .form-label {
+
   display: block;
   color: var(--color-primary-light);
   font-size: 13px;
@@ -1039,6 +1043,7 @@ nav ul:last-child img:hover {
 }
 
 .form-input {
+
   padding: 18px 32px;
   width: 100%;
   max-width: 310px;
@@ -1047,7 +1052,7 @@ nav ul:last-child img:hover {
   background-color: transparent;
   color: var(--color-primary-light);
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   box-sizing: border-box;
 }
 
@@ -1084,7 +1089,10 @@ nav ul:last-child img:hover {
   max-width: 286px;
   font-size: 22px;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
+
+
 
 
 
@@ -1111,6 +1119,7 @@ nav ul:last-child img:hover {
   justify-content: center;
   margin: 0 auto;
   padding-top: 8px;
+  font-size: 12px;
 }
 
 .form-terms-link {
@@ -1120,17 +1129,7 @@ nav ul:last-child img:hover {
   transition: color 0.3s ease;
 }
 
-.contact .form-terms-form {
 
-
-  padding: 8px;
-  color: var(--color-secondary-light);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  text-align: center;
-
-}
 
 
 
