@@ -1,0 +1,58 @@
+.about-images {
+  position: relative;
+  width: 420px;
+  height: 550px;
+  flex-shrink: 0;
+}
+
+.about-images img {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-images img:first-child {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.about-img-women {
+  top: 220px;
+  margin-left: 297px;
+  z-index: 1;
+}
+
+.img-star-big {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}
+
+.img-star-medium {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 200px;
+  right: -20px;
+  z-index: 3;
+}
+
+.img-star-small {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 320px;
+  right: 60px;
+  z-index: 2;
+}
+.img-card {
+  padding-top: 32px;
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,28 @@
+nav ul:last-child img {
+
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+
+nav ul:last-child img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.address-social-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.address-social {
+  stroke: var(--color-primary-light);
+  transition: stroke 0.3s ease;
+}
+
+.address-social-icon:hover .address-social {
+  stroke: var(--color-primary-blue);
+}

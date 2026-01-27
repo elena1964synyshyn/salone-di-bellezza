@@ -58,3 +58,42 @@
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
+
+.hero-servis {
+  font-family: 'Play', sans-serif;
+  color: var(--color-primary-dark);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-call {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  font-family: 'Play', sans-serif;
+  font-size: 28px;
+}
+
+.accent {
+  font-family: 'Roboto', sans-serif;
+  color: #4A4A4A;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+
+
+
+.servis-content {
+  padding-top: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-title .accent {
+  color: var(--color-secondary-light);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
